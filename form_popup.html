@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма обратной связи</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <input type="button" title="Background Image" class="consult_form_end" value="x">
+    <form class="consult_form">
+        <fieldset class="consult_form_wrap">
+            <div class="consult_form_info">
+                <h4 class="form_info">
+                    Заполните форму и закажите бесплатную консультацию
+                </h4>
+                <div>
+                    <input type="text" name="name" class="consult_form_field" placeholder="Имя" pattern="[A-Za-z]{,12}" minlength="1" maxlength="12" required>
+                    <!--<span class="form__error">Обязательное поле</span>-->
+                </div>
+                <div>
+                    <input type="tel" class="consult_form_field" placeholder="Телефон" pattern="+375/s[0-9]{2}/s[0-9]{3}-[0-9]{2}-[0-9]{2}" minlength="17" maxlength="17" required>
+                    <span class="form_error">Обязательное поле</span>
+                </div>
+                <button type="submit" class="consult_form_submit">
+                    Заказать консультацию
+                </button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>

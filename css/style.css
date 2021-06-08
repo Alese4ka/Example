@@ -1,0 +1,889 @@
+/* Reset */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Font: Geometria */
+@font-face {
+  font-family: "Geometria";
+  src: url("../fonts/fonts/geometria.eot"); /* IE 9 Compatibility Mode */
+  src: url("../fonts/fonts/geometria.eot?#iefix") format("embedded-opentype"),
+    /* IE < 9 */ url("../fonts/fonts/geometria.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/fonts/geometria.woff")
+      format("woff"),
+    /* Firefox >= 3.6, any other modern browser */
+      url("../fonts/fonts/geometria.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/fonts/geometria.svg#geometria")
+      format("svg"); /* Chrome < 4, Legacy iOS */
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Geometria";
+  font-style: normal;
+}
+
+/* Header */
+.header {
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header_logo {
+  flex: 0.1;
+  order: 0;
+}
+
+.header_logo_link {
+  margin-left: 32.98px;
+  margin-top: 16px;
+  margin-right: 70.09px;
+  display: block;
+}
+
+.header_logo_pic {
+  width: 43.93px;
+  height: 52.8px;
+}
+
+.header_phone {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.02em;
+  color: #333333;
+  margin-top: 22px;
+  flex: 1.5;
+  order: 1;
+}
+
+.phone_one {
+  padding-bottom: 10px;
+}
+
+.header_nav {
+  margin-top: 38px;
+  flex: 4.7;
+  order: 2;
+  margin-right: 20px;
+}
+
+.header_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header_item {
+  flex: none;
+  flex-grow: 0;
+  margin: 0px 20px;
+}
+
+.header_item:first-child {
+  margin-left: 0px;
+}
+
+.header_link span {
+  visibility: hidden;
+  width: 83px;
+  height: 10px;
+  left: 808px;
+  top: 0px;
+  vertical-align: top;
+  display: block;
+}
+
+.header_link {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.02em;
+  color: #333333;
+  text-decoration: none;
+}
+
+.header_link:hover span {
+  visibility: visible;
+}
+
+.header_link:hover,
+.header_link:focus,
+.header_link:active {
+  color: #828282;
+}
+
+.header_button {
+  display: flex;
+  flex-wrap: wrap;
+
+  flex: 2;
+  order: 2;
+}
+
+.search {
+  font-family: "Geometria";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.02em;
+  color: #333333;
+  height: 23px;
+  margin-right: 40px;
+  margin-top: 34px;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px dashed #333333;
+  flex: 2;
+  order: 0;
+}
+
+.consult {
+  font-family: "Geometria";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #333333;
+  flex: 1;
+  order: 1;
+  margin: 30px 0px 10px 0px;
+  width: 148px;
+  height: 36px;
+  background: transparent;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+.consult:hover {
+  background: #ffeb8b;
+  border-radius: 8px;
+}
+.consult:focus {
+  background: #828282;
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+.consult:active {
+  background: #ffdb2d;
+  border-radius: 8px;
+}
+
+/* Intro */
+.main_question {
+  margin-left: 30px;
+}
+
+.breadcrumbs {
+  padding-top: 89px;
+}
+.breadcrumbs_link {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.02em;
+  color: #333333;
+  text-decoration: none;
+}
+.breadcrumbs_link:hover,
+.breadcrumbs_link:focus,
+.breadcrumbs_link:active {
+  color: #828282;
+}
+.title_question {
+  padding-top: 10px;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 40px;
+  color: #333333;
+}
+.subtitle_question {
+  padding-top: 20px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #828282;
+  max-width: 447px;
+}
+
+/* FAQ */
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  max-width: 1920px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.faq {
+  flex: 6;
+  order: 0;
+  z-index: 2;
+}
+
+h3 {
+  width: 178px;
+  height: 60px;
+  font-family: "Geometria";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  color: #333333;
+  margin: 0px 55px 0px 30px;
+}
+
+.yellow_line {
+  margin-left: 10px;
+}
+
+.split {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.one_block {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn_one,
+.btn_two {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  width: 680px;
+  height: 76px;
+  background: #f4f4f4;
+  border-radius: 8px;
+  margin-bottom: 5px;
+}
+
+.btn_two,
+.btn_content_three {
+  margin-left: 263px;
+}
+
+.p_one {
+  height: 24px;
+  font-family: "Geometria";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+  margin: 26px 30px 26px 30px;
+  flex: 8;
+  order: 0;
+}
+
+.btn_content_three {
+  display: flex;
+  flex-direction: row;
+  width: 680px;
+  height: 309px;
+  background: #f4f4f4;
+  border-radius: 8px;
+  margin-bottom: 70px;
+}
+
+.btn_three {
+  display: flex;
+  flex-direction: column;
+  margin: 26px 30px 26px 30px;
+  flex: 8;
+  order: 0;
+}
+
+.p_two_title {
+  height: 48px;
+  font-family: "Geometria";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+  margin: 0px 0px 20px 0px;
+}
+
+.p_two {
+  width: 551px;
+  height: 178px;
+  font-family: "Geometria";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #333333;
+  margin: 0px 0px 37px 10px;
+}
+
+.circle {
+  background: none;
+  border: 0;
+  background: url(/img/svg/circle.svg) no-repeat left;
+  width: 19px;
+  height: 19px;
+  margin: 28px 0px 29px 0px;
+  flex: 0.5;
+  order: 1;
+}
+
+.circle:hover {
+  background: url(/img/svg/circle_hover.svg) no-repeat left;
+}
+
+.circle:focus {
+  background: url(/img/svg/circle_focus.svg) no-repeat left;
+}
+
+.circle:active {
+  background: url(/img/svg/circle_active.svg) no-repeat left;
+}
+
+.chat {
+  height: 764px;
+  background: #e0e0e0;
+  border: 0;
+  border-radius: 8px;
+  z-index: 2;
+  flex: 4;
+  order: 1;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.chat_title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  font-family: "Geometria";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  color: #333333;
+}
+
+/* Background image */
+.back_img {
+  position: absolute;
+  margin-top: 850px;
+  right: 0;
+  max-width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.back_img img {
+}
+
+/* Contacts */
+.contacts_wrapper {
+  position: relative;
+  background: #333333;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 80px 30px;
+}
+
+.contacts_field {
+  flex: 5;
+  order: 0;
+}
+
+.name {
+  font-family: "Geometria";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 38px;
+  color: #e0e0e0;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-bottom: 40px;
+}
+
+.office_one {
+  font-family: "Geometria";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #e0e0e0;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-bottom: 10px;
+}
+
+.tel_box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tel_number {
+  font-family: "Geometria";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-bottom: 40px;
+}
+
+.menu_address {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu_items {
+  display: flex;
+  flex-direction: column;
+  margin-right: 136px;
+}
+
+.menu_link {
+  font-family: "Geometria";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.menu_link:first-child {
+  margin-top: 0px;
+}
+
+.address_field {
+  font-family: "Geometria";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.address {
+  margin: 20px 0px;
+}
+
+.map {
+  flex: 5;
+  order: 1;
+}
+
+.map img {
+  max-width: 100%;
+  height: auto;
+}
+
+.all_rights {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #f4f4f4;
+  font-family: "Geometria";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.text_rights {
+  margin: 10px 30px 9px 10px;
+}
+
+/* Form popup style*/
+.consult_form_end {
+  background: url(/img/svg/style.svg) no-repeat left;
+  width: 16.6px;
+  height: 16.6px;
+  z-index: 1;
+  border: none;
+  position: absolute;
+  margin: 5.7px 5.7px 336.7px 424.7px;
+}
+
+input[value="x"] {
+  color: transparent;
+}
+
+.consult_form {
+  background: url(/img/consult.jpg) no-repeat left center;
+  position: absolute;
+  width: 447px;
+  height: 359px;
+  left: 0px;
+  top: 0px;
+  border-radius: 8px;
+}
+
+.form_info {
+  width: 395px;
+  height: 50px;
+  left: 26px;
+  top: 30px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  color: #333333;
+  margin: 30px 26px 40px 26px;
+}
+
+.consult_form_info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.consult_form_field {
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 8px;
+  width: 330px;
+  height: 43px;
+  left: 26px;
+  top: 120px;
+  background: #f4f4f4;
+  margin: 0px 91px 30px 26px;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 19px;
+  color: #828282;
+  padding-left: 20px;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus {
+  border: 1px solid black;
+}
+
+input[type="text"]:focus:input-placeholder,
+input[type="tel"]:focus:input-placeholder {
+  color: transparent;
+}
+
+.form_error {
+  color: red;
+  text-align: right;
+  font-size: 13px;
+  margin-top: 3px;
+  visibility: hidden;
+}
+
+input:invalid:required:(placeholder-shown) + .form_error {
+  border-color: red;
+  visibility: visible;
+}
+
+/*input:invalid:not(:placeholder-shown) {
+  border-color: red;
+}
+input:valid:not(:placeholder-shown) {
+  border-color: green;
+}
+
+
+input:invalid:not(:placeholder-shown) + .form__error {
+  display: block;
+}
+*/
+.consult_form_submit {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px 20px;
+  width: 223px;
+  height: 43px;
+  left: 26px;
+  top: 276px;
+  background: #ffdb2d;
+  border: none;
+  border-radius: 8px;
+  margin: 10px 198px 40px 26px;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 19px;
+  text-align: right;
+  letter-spacing: 0.02em;
+  color: #333333;
+}
+
+/* Form thnx */
+.thnx_end {
+  background: transparent;
+  border: none;
+  position: absolute;
+  padding: 25.7px 25.7px 290.7px 1104.7px;
+}
+
+.form_thnx {
+  background: url(/img/thnx.jpg) no-repeat left center;
+  position: absolute;
+  width: 1147px;
+  height: 333px;
+  left: 0px;
+  top: 0px;
+  border-radius: 8px;
+}
+
+.text_one {
+  width: 447px;
+  height: 45px;
+  left: 350px;
+  top: 100px;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  color: #333333;
+  margin: 100px 350px 20px 350px;
+}
+
+.text_two {
+  width: 390px;
+  height: 50px;
+  left: 378px;
+  top: 165px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  color: #333333;
+  margin: 0px 379px 118px 378px;
+}
+
+/* Responsive design */
+@media screen and (min-width: 1014px) and (max-width: 1280px) {
+  .header_item {
+    margin: 0px 5px;
+  }
+
+  .phone_one,
+  .phone_two,
+  .header_link,
+  .search,
+  .consult {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1240px) {
+  h3 {
+    margin-bottom: 20px;
+  }
+
+  .header_link {
+    font-size: 16px;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .back_img {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+  h3 {
+    margin-bottom: 20px;
+  }
+
+  .back_img {
+    display: none;
+  }
+
+  .faq {
+    flex: 6;
+  }
+
+  .chat {
+    flex: 4;
+    display: none;
+  }
+
+  .p_one,
+  .btn_three,
+  .p_two {
+    flex: 60%;
+    min-width: 210px;
+    max-width: 100%;
+    margin-top: 6px;
+  }
+
+  .p_two {
+    padding-top: 70px;
+  }
+
+  .circle {
+    flex: 1%;
+    min-width: 10px;
+    max-width: 100%;
+  }
+
+  .btn_one,
+  .btn_two,
+  .btn_content_three {
+    width: 320px;
+  }
+
+  .btn_content_three {
+    height: 580px;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 1024px) {
+  .back_img {
+    display: none;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header_logo,
+  .phone_one,
+  .phone_two,
+  .header_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav ul.header_list {
+    display: flex;
+    flex-direction: column;
+    order: 1;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav ul.header_list li {
+    padding: 0;
+    flex: 1;
+  }
+
+  .split {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn_two,
+  .btn_content_three {
+    margin-left: 0px;
+  }
+
+  .p_one,
+  .p_two_title,
+  .p_two {
+    font-size: 14px;
+  }
+
+  .contacts_wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .address_field {
+    margin-top: 30px;
+  }
+
+  .map {
+    margin-top: 20px;
+  }
+}
