@@ -708,23 +708,40 @@ h3 {
 .one_block {
   display: flex;
   flex-direction: column;
+  margin-top: 70px;
 }
 
-.btn_one,
-.btn_two {
+.one_block:first-child {
+  margin-top: 0px;
+}
+
+.accordion {
   width: 100%;
   display: flex;
   flex-direction: row;
   width: 680px;
   height: 76px;
-  background: #f4f4f4;
   border-radius: 8px;
-  margin-bottom: 5px;
+  background: #f4f4f4;
+  background-color: #f4f4f4;
+  cursor: pointer;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  font-family: "Geometria";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+  flex: 8;
+  order: 0;
 }
 
-.btn_two,
-.btn_content_three {
-  margin-left: 263px;
+.accordion:first-child {
+  margin-top: 0px;
 }
 
 .p_one {
@@ -740,45 +757,28 @@ h3 {
   order: 0;
 }
 
-.btn_content_three {
+.btn_one,
+.btn_two {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  width: 680px;
-  height: 309px;
-  background: #f4f4f4;
   border-radius: 8px;
-  margin-bottom: 70px;
+  margin-bottom: 5px;
+  padding: 0 18px;
+  background: #f4f4f4;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
 
-.btn_three {
-  display: flex;
-  flex-direction: column;
-  margin: 26px 30px 26px 30px;
-  flex: 8;
-  order: 0;
+.btn_one > p,
+.btn_two > p {
+  margin: 10px 0px 60px 0px;
 }
 
-.p_two_title {
-  height: 48px;
-  font-family: "Geometria";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  color: #333333;
-  margin: 0px 0px 20px 0px;
-}
-
-.p_two {
-  width: 551px;
-  height: 178px;
-  font-family: "Geometria";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 21px;
-  color: #333333;
-  margin: 0px 0px 37px 10px;
+.btn_one,
+.three_item {
+  margin-left: 263px;
 }
 
 .circle {
