@@ -49,7 +49,9 @@
                     <button class="search">
                         Поиск
                     </button>
-                    <button id="consult-form" class="consult">Консультация</button>
+                    <button id="consult_form" class="consult">
+                        Консультация
+                    </button>    
                 </div>
             </div>    
         </header>
@@ -321,8 +323,33 @@
             </div>
         </footer>
     </div>
-    
-    <div class="modal">
+
+
+    <div class="modal" id="modal-1">
+        <div class="modal_content">
+            <form id="myForm" class="consult_form">
+                <button class="consult_form_end">
+                    <img src="/img/svg/style.svg" width="16.6" alt="consult_form_end">
+                </button>
+                
+                <fieldset class="consult_form_wrap">
+                    <div class="consult_form_info">
+                        <h4 class="form_info">
+                            Заполните форму и закажите бесплатную консультацию
+                        </h4>
+                        <input type="text" name="login" class="consult_form_name" placeholder="Имя" pattern="[A-Za-z]{,12}">
+                        <span></span>
+                   
+                        <input type="tel" id="phone" class="consult_form_tel" placeholder="Телефон" pattern="+375/s[0-9]{2}/s[0-9]{3}-[0-9]{2}-[0-9]{2}" minlength="17">
+                        <span id="status"></span>	  
+                        <input type="submit" onclick="onPhone ()" id="submit" class="consult_form_submit" value="Заказать консультацию"> 
+                    </div>
+                </fieldset>
+            </form>
+        </div>    
+    </div>
+
+    <div class="modal active" id="#">
         <div class="form_thnx">
             <button class="thnx_end">
                 <img src="/img/svg/style.svg" width="16.6" alt="thnx_end">
@@ -333,8 +360,15 @@
             <h4 class="text_two">
                 Скоро с вами свяжется консультант для уточнения деталей
             </h4>
-        </div>  
-    </div>
+        </div> 
+    </div> 
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/js/jquery/jquery.maskedinput.js"></script>
+    <script src="/js/jquery/jquery.maskedinput.min.js"></script>
+    <script src="/js/scripts_modal.js"></script>
+    <script src="/js/scripts_modal copy.js"></script>
+    <script src="/js/register.js"></script>
+    
 </body>
 </html>
