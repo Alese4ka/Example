@@ -1063,8 +1063,8 @@ input[type="tel"]:focus {
   border: 1px solid black;
 }
 
-input[type="text"]:focus::-webkit-input-placeholder,
-input[type="tel"]:focus::-webkit-input-placeholder {
+input[type="text"]:focus,
+input[type="tel"]:focus {
   color: transparent;
 }
 
