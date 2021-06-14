@@ -497,7 +497,7 @@ body {
 
 .header_logo_link {
   margin-top: 16px;
-  margin-right: 70.09px;
+  margin-right: 60.09px;
   display: block;
 }
 
@@ -575,6 +575,8 @@ body {
   line-height: 23px;
   letter-spacing: 0.02em;
   color: #333333;
+  max-width: 120px;
+  min-width: 73px;
   height: 23px;
   margin-right: 40px;
   margin-top: 34px;
@@ -598,7 +600,8 @@ body {
   flex: 1;
   order: 1;
   margin: 30px 0px 10px 0px;
-  width: 148px;
+  max-width: 148px;
+  min-width: 125px;
   height: 36px;
   background: transparent;
   border: 1px solid black;
@@ -1006,8 +1009,8 @@ h3 {
   transform: rotate(180deg);
 }
 
-.consult_form {
-  background: url(/img/consult.jpg) no-repeat left center;
+.consult_form,
+.consult_pic {
   position: absolute;
   width: 447px;
   height: 359px;
@@ -1016,7 +1019,7 @@ h3 {
   border-radius: 8px;
 }
 
-.form_info {
+h4 {
   width: 395px;
   height: 50px;
   left: 26px;
@@ -1216,9 +1219,47 @@ span {
   .tel_number {
     margin-bottom: 10px;
   }
+
+  .consult_form,
+  .consult_pic {
+    width: 290px;
+    height: 261px;
+  }
+
+  h4 {
+    width: 195px;
+    height: 50px;
+    font-size: 16px;
+    margin: 10px 16px 20px 16px;
+  }
+
+  .consult_form_name,
+  .consult_form_tel {
+    width: 250px;
+    height: 33px;
+    font-size: 12px;
+    margin: 10px 71px 0px 10px;
+  }
+
+  span {
+    color: red;
+    margin-left: 100px;
+  }
+
+  .consult_form_submit {
+    width: 173px;
+    height: 33px;
+    font-size: 12px;
+    margin: 10px 98px 20px 10px;
+    padding: 6px 10px;
+  }
 }
 
 @media screen and (min-width: 300px) and (max-width: 1112px) {
+  .header_logo_link {
+    margin-right: 0px;
+  }
+
   .main {
     display: flex;
     flex-direction: column;
@@ -1230,7 +1271,7 @@ span {
     flex-direction: column;
   }
 
-  .header_logo,
+  .header_logo_link,
   .phone_one,
   .phone_two,
   .header_button {
@@ -1256,6 +1297,10 @@ span {
     background: none;
   }
 
+  .one_block:last-child {
+    margin-bottom: 30px;
+  }
+
   .split {
     display: flex;
     flex-direction: column;
@@ -1278,7 +1323,7 @@ span {
   }
 
   .chat {
-    margin: 0px 0px;
+    margin: 0px 0px 30px 0px;
   }
 
   .back {

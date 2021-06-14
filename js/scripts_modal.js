@@ -1,5 +1,5 @@
 $(function () {
-    $('#consult_form').click(function () {
+    $('#consult_btn').click(function () {
       $('#modal-1').addClass('modal_active');
       $('body').addClass('hidden');
     });
