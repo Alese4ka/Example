@@ -1,5 +1,5 @@
-/*$(function () {
-    $('#close_consult').click(function () {
+$(function () {
+    $('#submit').click(function () {
       $('#modal-2').addClass('modal_active');
       $('body').addClass('hidden');
     });
@@ -16,4 +16,4 @@
           $('body').removeClass('hidden');
         }
       });
-});*/
+});
